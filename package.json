@@ -1,0 +1,50 @@
+{
+  "name": "dsh-ui-transparency",
+  "version": "1.0.0",
+  "description": "Minimalist window transparency for DeepSeek Harness: one sidebar button and a slider set the whole window's opacity (0-90%). Nothing else changes.",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "transparency",
+    "opacity",
+    "minimalist",
+    "windows"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B612wang/dsh-ui-transparency.git"
+  },
+  "homepage": "https://github.com/B612wang/dsh-ui-transparency#readme",
+  "bugs": {
+    "url": "https://github.com/B612wang/dsh-ui-transparency/issues"
+  },
+  "os": [
+    "win32"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "helper.ps1",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

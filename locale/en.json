@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "UI Transparency",
+    "description": "One button at the sidebar foot with a slider that sets the whole DSH window's opacity (0-90%). It changes the window alpha only - no restyling, no extra panels."
+  }
+}
